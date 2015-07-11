@@ -4,6 +4,7 @@ angular.module('shortly.links', [])
   // Your code here
   $scope.data = {};
   $scope.getLinks = function() {
+    console.log("Ran!")
     Links.getLinks()
     .then(function(data) {
       $scope.data["links"] = data;

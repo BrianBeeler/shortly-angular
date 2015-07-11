@@ -12,11 +12,18 @@ angular.module('shortly.services', [])
 
   }
 
+  var addLink = function(link) {
+    console.log("Add link in services fired!")
+    return $http.post('/api/links', link )
+   }
+
   return {
-    getLinks : getLinks
+    getLinks : getLinks,
+    addLink : addLink
   }
 
-  // Your code here
+
+
 })
 .factory('Auth', function ($http, $location, $window) {
   // Don't touch this Auth service!!!

@@ -1,6 +1,18 @@
 <div id='container'>
 <!-- Your code here -->
 
+  <form name="Submit Url" >
+    <input type='text' ng-model='inputUrl'>
+    <button ng-click='addLink(inputUrl)'>Submit</button>
+  </form>
+
+  <ul>
+    <li ng-controller="LinksController">
+      <p>{{ data.links[data.links.length-1].url                            }}</p>
+      <p>{{ datal.base_url }}/api/links/{{link.code}}     </p>
+    </li>
+  <ul>
+
 </div>
 
 

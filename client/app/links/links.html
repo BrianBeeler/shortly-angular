@@ -1,6 +1,11 @@
 <div id='container' ng-controller='LinksController'>
-  <h1> HI </h1>
 
+  <ul>
+    <li ng-repeat="link in data.links">
+      <p>{{ link.url                            }}</p>
+      <p>{{ link.base_url }}/api/links/{{link.code}}     </p>
 
+    </li>
+  <ul>
 
 </div>
